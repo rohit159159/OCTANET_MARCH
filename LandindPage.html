@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #000;
+            color: white;
+            overflow-x: hidden;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1489183988443-b37b7e119ba6?q=80&w=2072&auto=format&fit=crop&ixlib-rb-4.0.3&ix') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: slideDown 1s forwards 0.5s;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: slideUp 1s forwards 1s;
+        }
+        .hero .cta-btn {
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            background: white;
+            color: #6a11cb;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+            animation: fadeIn 1s forwards 1.5s;
+        }
+        .hero .cta-btn:hover {
+            background: #ddd;
+            transform: scale(1.1);
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px;
+            background: #222;
+        }
+        .box {
+            width: 30%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+        }
+        .box img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .testimonial {
+            background: #333;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .testimonial:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar {
+            background: #72a9df;
+            padding: 20px;
+            text-align: right;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .sidebar a:hover {
+            color: #000;
+            transform: translateX(-5px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to Our Site</h1>
+        <p>Experience the best content and visuals</p>
+        <button class="cta-btn">Get Started</button>
+    </div>
+    <div class="content">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop&q=60" alt="Popular">
+            <h2>Popular</h2>
+            <p>Explore the most popular trends and places around the world.</p>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGF0ZXN0JTIwbmV3cyUyQyUyMGlubm92YXRpb25zJTJDJTIwYW5kJTIwdHJlbmRzLnxlbnwwfHwwfHx8MA%3D%3D" alt="Latest">
+            <h2>Latest</h2>
+            <p>Stay updated with the latest news, innovations, and trends.</p>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&auto=format&fit=crop&q=60" alt="More">
+            <h2>More...</h2>
+            <p>Dive into a world of creativity and explore endless possibilities.</p>
+        </div>
+    </div>
+    <div class="testimonial">
+        <blockquote>"This is the best site I've ever visited! Highly recommend it!"</blockquote>
+        <p>- Happy User</p>
+    </div>
+    <div class="sidebar">
+        <a href="#">Privacy Policies</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+    </div>
+    <div class="footer">
+        &copy; 2025 All Rights Reserved
+    </div>
+</body>
+</html>
