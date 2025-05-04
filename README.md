@@ -30,10 +30,8 @@ Unsplash for royalty-free images
 
 
 📂 Folder Structure
-cpp
-Copy
-Edit
-landing-page/
+
+landing-page/ <br>
 ├── index.html
-├── style.css (inline in this case)
-└── assets/ (optional for images/fonts)
+├── style.css (inline in this case) <br>
+└── assets/ (optional for images/fonts) <br>
