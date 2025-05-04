@@ -10,7 +10,7 @@ CSS3 (Flexbox, Media Queries, Animations)
 Unsplash for royalty-free images
 
 📸 Preview
-()
+![image](https://github.com/rohit159159/OCTANET_MARCH/blob/b00806e724cae8f955c8a289bf0aa061184d6a77/Screenshot%202025-05-04%20132817.png)
 
 
 # 🎯 Features
